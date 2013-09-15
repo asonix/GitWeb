@@ -1,0 +1,23 @@
+body {
+    width: 50%;
+    min-width: 300px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Tahoma;
+}
+h1 {
+    text-align: center;
+}
+h2 {
+    text-align: left;
+}
+h3 {
+    text-align: left;
+}
+p {
+    text-align: left;
+    color: #333333;
+    font-family: Roboto, Tahoma;
+    font-size: 14px;
+}
