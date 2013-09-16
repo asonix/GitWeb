@@ -1,0 +1,306 @@
+::selection			{ background:#cc8550; color:#ffffff; /* Safari and Opera */ }
+::-moz-selection  { background:#cc8550; color:#ffffff; /* Firefox */ }
+	
+	/*OUTER ENTITIES*/
+
+.header {
+	z-index: 20;
+   	position: fixed;
+   	left: 0px;
+   	top: 0px;
+   	height: 20px;
+   	width: 100%;
+   	background-image: url('../img/olw.jpg');
+   	background-size: 360px 360px;
+	background-repeat: repeat-x;
+}
+.footer {
+	z-index: 20;
+	position: fixed;
+	text-align: right;
+   	left: 0px;
+   	bottom: 0px;
+   	height: 20px;
+   	width: 100%;
+   	background-image: url('../img/olw.jpg');
+   	background-size: 360px 360px;
+	background-repeat: repeat-x;
+}
+.copyright {
+	z-index: 30;
+	position: fixed;
+	bottom: 0px;
+	right: 0px;
+	margin-top: 5px;
+	padding-top: 1px;
+	padding-right: 5px;
+	padding-bottom: 1px;
+	text-align: right;
+	width: 350px;
+	background-image: url('../img/olwbackground.jpg');
+	border-radius: 0px 5px 0px 0px;
+	-moz-border-radius: 0px 5px 0px 0px;
+	-webkit-border-radius: 0px 5px 0px 0px;
+	font-size: 12px;
+	position: relative;
+	/*IN FOOTER*/
+}
+.copyright b {
+	z-index: 31;
+}
+
+
+
+	/*STRUCTUAL ENTITIES*/
+
+html {
+    height: 100%;
+}
+body {
+        z-index: 1;
+	background-color: #ede9c5;
+	background-image: url('../img/olwbackground.jpg');
+	color: #d9691e;
+	font-family: 'Roboto', Tahoma, Arial, serif;
+	height: 100%;
+	width: auto;
+	margin-right: 0px;
+	margin-left: 0px;
+	margin-top: 0px;
+	overflow-y:  hidden;
+        text-align: right;
+	position: relative;
+	overflow-x: auto;
+}
+.content {
+	background-color: #ede9c5;
+	background-image: url('../img/olwbackground.jpg');
+	color: #d9691e;
+	font-family: 'Roboto', Tahoma, Arial, serif;
+        left: 0px;
+        top: 0px;
+	width: 100%;
+	min-width: 750px;
+        text-align: center;
+        height: 100%;
+	overflow: hidden;
+	position: relative;
+}
+.slideholder {
+	z-index: 22;
+	position: absolute;
+   	left: 0px;
+   	top: 0px;
+	margin-left: 55%;
+	width: 50%;
+	height: 100%;
+	margin-bottom: -20px;
+}
+.slide {
+	z-index: 21;
+	background-color: #ede9c5;
+	background-image: url('../img/olwslider.jpg');
+	/*background-size: 227px 227px;*/
+	background-position: center;
+	text-align: center;
+	vertical-align: middle;
+	height: 120%;
+	padding: 0px;
+	width: 231px;
+	margin-left: -3px;
+	border-left-width: 1px;
+	border-left-style: solid;
+	border-left-color: #d9691e;
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #d9691e;
+	position: relative;
+}
+.rightimg {
+	z-index: 10;
+	position: absolute;
+	top: 15%;
+	left: 250px;
+	padding: 0px;
+	width: 50%;
+	min-width: 300px;
+}
+.rightimg img {
+	z-index: 10;
+	width: 100%;
+}
+
+
+	/*RIGHT SIDE OF PAGE*/
+
+.right {
+	z-index: 22;
+	position: absolute;
+   	left: 0px;
+   	top: 0px;
+	margin-left: 55%;
+	width: 100%;
+	min-width: 900px;
+	height: 100%;
+	margin-bottom: -20px;
+	overflow-y: scroll;
+}
+.navigation {
+	z-index: 22;
+	background-color: #f7f7e6;
+	background-image: url('../img/noise.f7f7e6.jpg');
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 66px;
+	height: auto;
+	padding: 0px;
+	outline: none;
+	width: 225px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #d9691e;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+        transition: all 0.15s ease-in-out;
+        -moz-transition: all 0.15s ease-in-out;
+        -webkit-transition: all 0.15s ease-in-out;
+	position: relative;
+}
+.navigation:hover {
+	border-color: #cc8550;
+}
+.olwimg {
+	outline:none;
+	margin: 25px;
+        transition: all 0.15s ease-in-out;
+        -webkit-transition: all 0.15s ease-in-out;
+        -moz-transition: all 0.15s ease-in-out;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	text-align: center;
+	height: 175px;
+	width: 175px;
+	position: relative;
+}
+.olwimg:hover {
+        box-shadow: 0 0 5px #cc8550;
+        -webkit-box-shadow: 0 0 5px #cc8550; 
+        -moz-box-shadow: 0 0 5px #cc8550; 
+	position: relative;
+}
+.homeLink {
+	line-height: 20px;
+	font-size: 20px;
+	margin-top: 10px;
+	margin-bottom: 25px;
+	position: relative;
+}
+.songs {
+	margin-top: 15px;
+	text-align: center;
+	line-height: 25px;
+	margin-bottom: 25px;
+	position: relative;
+}
+
+
+	/*LEFT SIDE OF PAGE*/
+
+.left {
+	z-index: 19;
+	position: relative;
+   	right: -17px;
+   	top: 0px;
+	width: 100%;
+	height: 100%;
+	margin-bottom: -20px;
+	margin-right: 30px;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+.extra {
+	background-color: #f7f7e6;
+	background-image: url('../img/noise.f7f7e6.jpg');
+	postion: relative;
+	margin-left: 2%;
+	padding: 0px;
+	margin-top: 50px;
+	margin-bottom: 67px;
+	margin-right: 15px;
+	height: auto;
+	width: 51%;
+	min-width: 350px;
+	max-width: 700px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #d9691e;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+        transition: all 0.15s ease-in-out;
+        -moz-transition: all 0.15s ease-in-out;
+        -webkit-transition: all 0.15s ease-in-out;
+}
+.extra:hover {
+	border-color: #cc8550;
+}
+.heading {
+	text-align: left;
+	margin-top: 0px;
+	padding-left: 3%;
+	padding-right: 3%;
+	width: 94%;
+	min-width: 325px;
+	height: 20%;
+	position: relative;
+}
+.lyrics {
+	background-image: url('../img/tidbit idk2.png');
+	margin: 0px;
+	padding: 0px;
+	background-size: 160%;
+	height: 80%;
+	background-repeat: no-repeat;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+}
+.lyrics p{
+	padding-left: 3%;
+	padding-right: 3%;
+	text-align: left;
+	width: 94%;
+	min-width: 300px;
+	margin-bottom: 20px;
+	position: relative;
+}
+
+
+	/*LINK PARAMETERS*/
+
+a:link {
+	outline:none;
+        transition: all 0.15s ease-in-out;
+        -webkit-transition: all 0.15s ease-in-out;
+        -moz-transition: all 0.15s ease-in-out;
+	color: #d9691e;
+	text-decoration: none;
+}
+a:hover {
+	color: #cc8550;
+	text-decoration: none;
+}
+a:visited {
+	color: #d9691e;
+	text-decoration: none;
+}
+a:visited:hover {
+	color: #cc8550;
+	text-decoration: none;
+}
+a:active {
+	color: #9c4d14;
+	text-decoration: none;
+}
