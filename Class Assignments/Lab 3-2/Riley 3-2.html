@@ -17,6 +17,14 @@
                 width: 650px;
                 float: left;
             }
+            dt {
+                background-color: #ffff99;
+                color: #000000;
+            }
+            dd {
+                background-color: #99bb88;
+                color: #000000;
+            }
         </style>
     </head>
     <body>
@@ -28,12 +36,29 @@
             <article style="background-color: #cc6600;width: 650px;padding: 5px">
                 <h2>Using Style Sheets</h2>
                 <p style="text-align: justify">
-                    
+                    Style Seets, or Cascading Style Sheets, are a very powerful tool for the web site developer. THey allow you to take control over the look and feel of the wab pages and to create a consistant design, layout, and color scheme throughout your entire site. The capabilities of style sheets have expanded greatly over the years giving the designer much more control over the appearance of their sites. Originally when HTML was first invented, style was not a consideration therefore tags were added into later releases of HTML that could add style and color to a website, but the purpose of HTML was to define the structure of the page, not to incorporate style. Eventualy Style Sheets were released as a tool to incorporate style into a web site and to take away the stying duties of HTML. As Style Sheets became more and more powerful, many of the non-structural HTML tags became obsolete and some current browser releases have even stopped recognizing them altoghether. Cascading Style Sheets can be applied to a website at three different levels:
                 </p>
             </article>
             <article style="width: 650px">
                 <dl>
-                    
+                    <dt>
+                        <b>External Style Sheet</b>
+                    </dt>
+                    <dd>
+                        External Style Sheets allow you to create a master style file where you can define all the styles for your enitire web site. Any styles that are used on multiple pages of a website should be defined on the external style sheet. The external style sheet is attached to a webpage using the link tag.
+                    </dd>
+                    <dt>
+                        <b>Embedded Style Sheet</b>
+                    </dt>
+                    <dd>
+                        An embedded style sheet should include styles that only apply to a signle page. Any styles that are only used on one page should not be included on the external style sheet because it increases the size of the style sheet and is unnecessarily loaded by all the other pages of your site.
+                    </dd>
+                    <dt>
+                        <b>Inline Style Sheet</b>
+                    </dt>
+                    <dd>
+                        An inline style sheet is used to add a style to a specific tag as an attribute. The inline style will only work ont he tag it is applied to and will not affect any other tags.
+                    </dd>
                 </dl>
             </article>
         </section>

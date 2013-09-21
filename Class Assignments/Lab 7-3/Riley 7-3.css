@@ -1,0 +1,42 @@
+a {
+    color: #619a00;
+    text-decoration: none;
+}
+a:hover {
+    color: #99ff99;
+    background-color: #619a00;
+}
+body {
+    background-color: #c4f66f;
+    font-family: Arial;
+}
+article {
+    border-radius: 20px;
+    background-color: #99ff99;
+    margin: auto;
+    width: 625px;
+    padding: 10px;
+}
+h1 {
+    text-align: center;
+    color: #99ff99;
+}
+h2 {
+    text-align: center;
+}
+li {
+    text-align: left;
+}
+nav {
+    text-align: center;
+}
+p {
+    text-align: justify;
+}
+section {
+    width: 650px;
+    margin: auto;
+    background-color: #009900;
+    border-radius: 20px;
+    padding: 20px;
+}

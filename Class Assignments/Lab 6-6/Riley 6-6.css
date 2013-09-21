@@ -1,0 +1,37 @@
+article {
+    width: 606px;
+    height: 490px;
+    background-color: #ffffff;
+    padding: 5px;
+    float: left;
+}
+body {
+    background-color: #5ccccc;
+    color: #006363;
+    font-family: Arial;
+}
+header {
+    width: 750px;
+    text-align: center;
+}
+img {
+    border: 0;
+}
+nav {
+    width: 134px;
+    height: 500px;
+    background-color: #cc6600;
+    clear: both;
+    float: left;
+}
+p {
+    text-align: justify;
+}
+nav a img {
+    height: 30px;
+    width: 50px;
+}
+nav img {
+    height: 30px;
+    width: 50px;
+}

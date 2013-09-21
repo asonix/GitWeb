@@ -1,0 +1,52 @@
+a {
+    color: #cdcdcd;
+}
+a:hover {
+    color: #000000;
+}
+article {
+    width: 700px;
+    margin: auto;
+    border: solid #000000 2px;
+    background-color: #336699;
+    color: #ffffff;
+    text-align: left;
+    padding: 10px;
+}
+body {
+    background-image: url(blueBack.gif);
+    font-family: Arial;
+}
+div {
+    text-align: center;
+}
+header {
+    text-align: center;
+}
+img {
+    margin: 10px;
+}
+li {
+    list-style-image: url(bullet.gif);
+}
+nav {
+    text-align: center;
+}
+p {
+    font-size: 16pt;
+    text-align: center;
+}
+section {
+    width: 600px;
+    height: 260px;
+    padding: 20px;
+    background-color: #ffffff;
+    border: solid #000000 1px;
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+span {
+    font-weight: bold;
+}
