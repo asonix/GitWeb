@@ -1,0 +1,9 @@
+a {
+    color: #007929;
+    text-decoration: none;
+    font-size: 14pt;
+    line-height: 25px;
+}
+a:hover {
+    background-color: #007929;
+}
