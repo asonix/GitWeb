@@ -6,4 +6,60 @@ a {
 }
 a:hover {
     background-color: #007929;
+    color: #ffffff;
+}
+article {
+    width: 300px;
+    background-color: #63dd8d;
+    padding: 10px;
+    border: solid #000000 1px;
+    border-radius: 10px;
+    float: left;
+}
+body {
+    background-color: #007929;
+    font-family: Arial;
+    text-align: center;
+    margin: 0px;
+}
+div {
+    width: 400px;
+    background-color: #269926;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    float: right;
+}
+header {
+    background-color: #63dd9d;
+    border: solid #000000 1px;
+}
+h1 {
+    line-height: 50px;
+    text-align: center;
+}
+h2 {
+    color: #ffffff;
+}
+nav {
+    background-color: #ffffff;
+}
+p {
+    text-align: justify;
+}
+section {
+    width: 800px;
+    margin: auto;
+}
+table {
+    margin: auto;
+    width: 400px;
+    background-color: #63dd8d;
+}
+td {
+    text-align: left;
+}
+th {
+    background-color: #37dd6f;
+    text-align: left;
 }
