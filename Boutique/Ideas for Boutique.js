@@ -60,7 +60,7 @@ $(document).ready(function() {
                         if (i < 2) {
                                 height = String(Math.round($('.content').width()/ratio))+'px';
                                 $('.content').css('height', height);
-                                $('.wrapper').css('width', $('wrapper').width());
+                                $('.wrapper').css('width', $('wrapper').width()).css('min-height', String(Math.round($('.header').height()+$('.content').height()+$('.information').height()+$('.footer').height()+60))+'px');
                                 navwidth = String(Math.round($('#linkone').width()+$('#linktwo').width()+$('#linkthree').width()+80))+'px';
                                 $('nav').css('width', navwidth);
                                 i++;
@@ -75,11 +75,11 @@ $(document).ready(function() {
                 $(window).resize(function() {
                 
                         if ($('body').width() < 637) {
-                                $('.wrapper').css('width', '100%').css('height', String(Math.round($(window).height()-40))).css('margin-top', '0px');
+                                $('.wrapper').css('width', '100%').css('height', String(Math.round($(window).height()-40))).css('margin-top', '0px').css('min-height', String(Math.round($('.header').height()+$('.content').height()+$('.information').height()+$('.footer').height()+60))+'px');
                                 $('.footer').css('position', 'absolute').css('bottom', '0px');
                                 
                                 if ($('html').height() < 611) {
-                                        $('.footer').css('position', '').css('bottom', '');
+                                        $('.footer').css('position', 'relative').css('bottom', '');
                                         $('.wrapper').css('height', '');
                                         $('.formalities').css('position', 'absolute');
                                 }
