@@ -10,26 +10,28 @@ $(document).ready(function() {
                 var defaultfs = String(Math.round($(window).width()/31.1))+'px';
                 var hdefaultfs = String(Math.round($(window).width()/62.2))+'px';
                 var qdefaultfs = String(Math.round($(window).width()/124.4))+'px';
+                var tdefaultfs = String(Math.ceil($(window).width()/622))+'px';
                 console.log(height);
                 var m = setInterval(function() {
-                   if (i < 2) {
-                        height = String(Math.round($('.content').width()/ratio))+'px';
-                        logofs = String(Math.round($(window).width()/3.11))+'px';
-                        defaultfs = String(Math.round($(window).width()/31.1))+'px';
-                        hdefaultfs = String(Math.round($(window).width()/62.2))+'px';
-                        qdefaultfs = String(Math.round($(window).width()/124.4))+'px';
-                        $('.content').css('height', height);
-                        $('body').css('height', String(Math.round($('.wrapper').height()+$('.formalities').height()))+'px').css('min-height', String(Math.round($('body').height()))+'px').css('min-width', String(Math.round($('body').width()))+'px');
-                        $('.logo').css('font-size', logofs);
-                        $('html').css('font-size', defaultfs);
-                        $('.wrapper').css('box-shadow', '0px 0px '+hdefaultfs+' #000000');
-                        $('nav').css('margin-bottom', defaultfs).css('margin-top', hdefaultfs);
-                        $('.navlink').css('margin-left', qdefaultfs).css('margin-right', qdefaultfs);
-                        i++;
-                   }
-                   else {
-                        clearInterval(m);
-                   }
+                        if (i < 2) {
+                                height = String(Math.round($('.content').width()/ratio))+'px';
+                                logofs = String(Math.round($(window).width()/3.11))+'px';
+                                defaultfs = String(Math.round($(window).width()/31.1))+'px';
+                                hdefaultfs = String(Math.round($(window).width()/62.2))+'px';
+                                qdefaultfs = String(Math.round($(window).width()/124.4))+'px';
+                                tdefaultfs = String(Math.ceil($(window).width()/622))+'px';
+                                $('.content').css('height', height).css('border-bottom-width', tdefaultfs).css('border-topwidth', tdefaultfs);
+                                $('body').css('height', String(Math.round($('.wrapper').height()+$('.formalities').height()))+'px').css('min-height', String(Math.round($('body').height()))+'px').css('min-width', String(Math.round($('body').width()))+'px');
+                                $('.logo').css('font-size', logofs);
+                                $('html').css('font-size', defaultfs);
+                                $('.wrapper').css('box-shadow', '0px 0px '+hdefaultfs+' #000000');
+                                $('nav').css('margin-bottom', defaultfs).css('margin-top', hdefaultfs);
+                                $('.navlink').css('margin-left', qdefaultfs).css('margin-right', qdefaultfs);
+                                i++;
+                        }
+                        else {
+                                clearInterval(m);
+                        }
                 });
         }
         
