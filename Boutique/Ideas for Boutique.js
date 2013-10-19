@@ -73,9 +73,11 @@ $(document).ready(function() {
                 
                 //If window is resized
                 $(window).resize(function() {
-                
+                        
+                        $('.wrapper').css('min-height', String(Math.round($('.header').height()+$('.content').height()+$('.information').height()+$('.footer').height()+60))+'px');
+                        
                         if ($('body').width() < 637) {
-                                $('.wrapper').css('width', '100%').css('height', String(Math.round($(window).height()-40))).css('margin-top', '0px').css('min-height', String(Math.round($('.header').height()+$('.content').height()+$('.information').height()+$('.footer').height()+60))+'px');
+                                $('.wrapper').css('width', '100%').css('height', String(Math.round($(window).height()-40))).css('margin-top', '0px');
                                 $('.footer').css('position', 'absolute').css('bottom', '0px');
                                 
                                 if ($('html').height() < 611) {
