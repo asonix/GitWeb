@@ -51,7 +51,7 @@ $(document).ready(function() {
                 }
                 
                 else {
-                        $('.wrapper').css('width', '70%').css('height', '').css('margin-top','4%');
+                        $('.wrapper').css('width', '80%').css('height', '').css('margin-top','4%');
                         $('.footer').css('position', '').css('bottom', '');
                 }
                 
@@ -78,7 +78,7 @@ $(document).ready(function() {
                 $(window).resize(function() {
                         
                         $('.wrapper').css('min-height', String(Math.round($('.header').height()+$('.content').height()+$('.information').height()+$('.footer').height()+60))+'px');
-                        
+                        $('.information').css('clear', 'both');
                         if ($('body').width() < 637) {
                                 $('.wrapper').css('width', '100%').css('height', String(Math.round($(window).height()-40))).css('margin-top', '0px');
                                 $('.footer').css('position', 'absolute').css('bottom', '0px');
@@ -97,10 +97,21 @@ $(document).ready(function() {
                                 }
                         }
                         
+                        //else if ($('body').width() > 1607) {
+                        //        $('.header').css('float', 'left').css('margin-top', '20px').css('margin-left', '5%');
+                        //        $('.content').css('float', 'left').css('margin-left', '5%').css('clear', 'left');
+                        //        $('.information').css('max-width', '40%').css('float', 'right').css('margin-right', '5%').css('clear', '').css('margin-top', '-200px');
+                        //        $('.footer').css('clear', 'both');
+                        //        $('.wrapper').css('padding-top', '10px').css('min-height', String(Math.round($('.content').height()+$('.header').height()+$('.footer').height()+60))+'px');
+                        //}
+                        
                         else {
-                                $('.wrapper').css('width', '70%').css('height', '').css('margin-top', '4%');
+                                $('.wrapper').css('width', '80%').css('height', '').css('margin-top', '4%');
                                 $('.footer').css('position', '').css('bottom', '');
                                 $('.formalities').css('position', 'fixed');
+                                $('.header').css('float', '').css('margin-top', '').css('margin-left', '');
+                                $('.content').css('float', '').css('margin-left', '');
+                                $('.information').css('clear', 'both').css('margin-top', '').css('max-width', '630px').css('float', '').css('margin-right', 'auto');
                         }
                         
                         height = String(Math.round($('.content').width()/ratio))+'px';
