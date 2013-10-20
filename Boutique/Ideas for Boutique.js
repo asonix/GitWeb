@@ -10,7 +10,7 @@ $(document).ready(function() {
                 var defaultfs = String(Math.round($(window).width()/31.1))+'px';
                 var hdefaultfs = String(Math.round($(window).width()/62.2))+'px';
                 var qdefaultfs = String(Math.round($(window).width()/124.4))+'px';
-                var tdefaultfs = String(Math.ceil($(window).width()/622))+'px';
+                var tdefaultfs = String(Math.ceil($(window).width()/311))+'px';
                 console.log(height);
                 var m = setInterval(function() {
                         if (i < 2) {
@@ -20,13 +20,14 @@ $(document).ready(function() {
                                 hdefaultfs = String(Math.round($(window).width()/62.2))+'px';
                                 qdefaultfs = String(Math.round($(window).width()/124.4))+'px';
                                 tdefaultfs = String(Math.ceil($(window).width()/622))+'px';
-                                $('.content').css('height', height).css('border-bottom-width', tdefaultfs).css('border-topwidth', tdefaultfs);
-                                $('body').css('height', String(Math.round($('.wrapper').height()+$('.formalities').height()))+'px').css('min-height', String(Math.round($('body').height()))+'px').css('min-width', String(Math.round($('body').width()))+'px');
+                                $('.content').css('height', height).css('border-bottom-width', tdefaultfs).css('border-top-width', tdefaultfs);
                                 $('.logo').css('font-size', logofs);
                                 $('html').css('font-size', defaultfs);
                                 $('.wrapper').css('box-shadow', '0px 0px '+hdefaultfs+' #000000');
                                 $('nav').css('margin-bottom', defaultfs).css('margin-top', hdefaultfs);
                                 $('.navlink').css('margin-left', qdefaultfs).css('margin-right', qdefaultfs);
+                                $('body').css('padding-bottom', hdefaultfs);
+                                $('.information').css('margin-top', defaultfs);
                                 i++;
                         }
                         else {

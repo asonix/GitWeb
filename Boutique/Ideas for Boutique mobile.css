@@ -54,10 +54,18 @@ nav {
     border-bottom-style: solid;
 }
 .information {
+    clear: both;
     margin-left: auto;
     margin-right: auto;
-    width: 90%;
+    text-align: center;
+    background-color: #e5e5e5;
+}
+.information p {
     text-align: justify;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #e5e5e5;
 }
 .footer {
     width: 100%;
@@ -87,8 +95,6 @@ nav {
     width: 100px;
 }
 .formalities {
-    clear: both;
-    position: absolute;
     bottom: 0px;
     font-size: .75em;
     color: #e5e5e5;
